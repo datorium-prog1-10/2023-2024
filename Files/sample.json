@@ -1,0 +1,42 @@
+{
+    "companies": [
+        {
+            "name": "Liels uzņēmums",
+            "address": "Riga",
+            "phone": "+371987654321",
+            "contacts": [
+                {
+                    "name": "Anna",
+                    "surname": "Bērziņa",
+                    "phone": "6547893214",
+                    "email": "anna@somemailbox.com"
+                },
+                {
+                    "name": "Oskars",
+                    "surname": "Andersons",
+                    "phone": "789654123",
+                    "email": "oskars@somemailbox.com"
+                }
+            ]
+        },
+        {
+            "name": "Vidējais uzņēmums", 
+            "address": "Tallinn", 
+            "phone": "+372987654321",
+            "contacts": [
+                {
+                    "name": "Jenifere",
+                    "surname": "Johansone",
+                    "phone": "321456987",
+                    "email": "jenifere@somemailbox.com"
+                }
+            ]
+        },
+        {
+            "name": "Mazs uzņēmums", 
+            "address": "Vilnius", 
+            "phone": "+370987654321",
+            "contacts": []
+        }
+    ]
+}
