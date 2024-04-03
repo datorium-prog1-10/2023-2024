@@ -39,9 +39,18 @@ def exit_app():
     print("Bye, thanks for using our phonebook!")
     exit()
 
-
+def load_data():
+    global phonebook
+    try:
+        with open('phonebook.json', 'r') as file:
+            phonebook = json.load(file)
+    # exception ir kļūda
+    except:
+        print('Notika kļūda, phonebook dati nav ielādēti!')
+        phonebook = []
 
 def main():
+    load_data()
     while True:
         choice = input("1-pievienot, 2-izvadīt, 3-atrast, 4-izdzēst, 5-iziet: ")
 
@@ -59,7 +68,3 @@ def main():
             print("Nebija pareiza izvēle")
 
 main()
-
-# UZDEVUMI
-# 1. Kā saglabāt mūsu lietotnes datus atmiņā
-# 2. Kā ielādēt datus no atmiņas
